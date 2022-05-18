@@ -4,7 +4,7 @@
 #include "Grafo.h"
 
 int gerarNumero(int variacao){
-    return rand() % variacao; //varia entre 0 e o valor entrado de variacao 
+    return rand() % variacao; //varia entre 0 e o valor entrado de variacao.
 }
 
 int main(){

@@ -4,8 +4,8 @@
 /*
     @brief Imprime os vizinhos do vertex entrado como parametro,
     @param indexVertex Index que representam o vertex.
-    @param matrixAdjacencia Matriz que representa as ligações entres os nós
-    @param qtdVertex Quantida de nós contidos no grafo
+    @param qtdVertex Quantida de nós contidos no grafo.
+    @param matrixAdjacencia Matriz que representa as ligações entres os nós.
 */
 void grafoImprimeVizinho(int indexVertex, int qtdVertex, int matrizAdjacencia[qtdVertex][qtdVertex]);
 
