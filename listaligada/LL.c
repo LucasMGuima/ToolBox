@@ -25,11 +25,30 @@ void llImprime(Celula cabeca){
     }
 }
 
-int main(){
-    Celula c = llCriaCelula(10);
-    llAddCelula(llCriaCelula(20), c);
-    llAddCelula(llCriaCelula(30), c);
-    llAddCelula(llCriaCelula(40), c);
+Celula llMaiorElemento(Celula cabeca){
+    if(cabeca->prox == NULL){
+        return cabeca;
+    }
+    
+    Celula maior = cabeca;
+    for(Celula next = cabeca->prox; next != NULL; next = next->prox){
+        if(maior->chave < next->chave){
+            maior = next;
+        }
+    }
+    return maior;
+}
 
-    llImprime(c);
+Celula llMenorElemento(Celula cabeca){
+    if(cabeca->prox == NULL){
+        return cabeca;
+    }
+    
+    Celula menor = cabeca;
+    for(Celula next = cabeca->prox; next != NULL; next = next->prox){
+        if(menor->chave > next->chave){
+            menor = next;
+        }
+    }
+    return menor;
 }
